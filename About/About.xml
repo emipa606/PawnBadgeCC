@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Pawn Badge - Command and Conquer</name>
+  <packageId>Mlie.PawnBadgeCC</packageId>
+  <author>Texas Redhawk</author>
+  <url>https://github.com/emipa606/PawnBadgeCC</url>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>SaucyPigeon.PawnBadge</packageId>
+      <displayName>Pawn Badge Fan Fork</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2112663412</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>SaucyPigeon.PawnBadge</li>
+  </loadAfter>
+  <description>Update and combination of Texas Redhawks 2 mods for RimWorld 1.1
+https://steamcommunity.com/sharedfiles/filedetails/?id=1752397431
+https://steamcommunity.com/sharedfiles/filedetails/?id=1752390601
+
+[img]https://i.imgur.com/GYswkZ7.png[/img]
+
+Support-chat:
+https://invite.gg/mlie
+
+Non-steam version:
+https://github.com/emipa606/PawnBadgeCC
+
+- Combined the two mods into one and added the option to select badges from options instead.
+	
+--- Original Description ---
+Command and Conquer Global Defense Initiative and Command and Conquer Brotherhood of Nod rank icons addon for RangelReale's Pawn Badge.
+
+Recommended for use with Telefonmast's Tiberium Rim.
+
+Icons were sourced from the Command and Conquer wiki. I take no credit for their design.
+</description>
+</ModMetaData>
