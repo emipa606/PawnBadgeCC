@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Pawn Badge - Command and Conquer</name>
+  <name>Pawn Badge - Collection</name>
   <packageId>Mlie.PawnBadgeCC</packageId>
   <author>Texas Redhawk</author>
   <url>https://github.com/emipa606/PawnBadgeCC</url>
   <supportedVersions>
     <li>1.1</li>
+    <li>1.2</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -17,11 +18,23 @@
   <loadAfter>
     <li>SaucyPigeon.PawnBadge</li>
   </loadAfter>
-  <description>Update and combination of Texas Redhawks 2 mods for RimWorld 1.1
-https://steamcommunity.com/sharedfiles/filedetails/?id=1752397431
-https://steamcommunity.com/sharedfiles/filedetails/?id=1752390601
+  <description>Update and combination of Badge-mods
+Combined all badges-mods into one mod where you can select active sets from mod-options.
+If you have an idea for a badge-set, just leave a comment
 
-[img]https://i.imgur.com/GYswkZ7.png[/img]
+Badge-mods included:
+
+Star-Wars themed:
+Imperial Army
+Imperial Navy
+Rebels
+
+Texas Redhawks three mods:
+Command and Conquer Brotherhood of Nod - https://steamcommunity.com/sharedfiles/filedetails/?id=1752397431
+Command and Conquer Global Defense Initiative - https://steamcommunity.com/sharedfiles/filedetails/?id=1752390601
+WWII German Army - https://steamcommunity.com/sharedfiles/filedetails/?id=1756882185
+
+- Added more transparent versions of GDI and Nod-badges, thanks to user fallout me
 
 Support-chat:
 https://invite.gg/mlie
@@ -29,13 +42,5 @@ https://invite.gg/mlie
 Non-steam version:
 https://github.com/emipa606/PawnBadgeCC
 
-- Combined the two mods into one and added the option to select badges from options instead.
-	
---- Original Description ---
-Command and Conquer Global Defense Initiative and Command and Conquer Brotherhood of Nod rank icons addon for RangelReale's Pawn Badge.
-
-Recommended for use with Telefonmast's Tiberium Rim.
-
-Icons were sourced from the Command and Conquer wiki. I take no credit for their design.
 </description>
 </ModMetaData>

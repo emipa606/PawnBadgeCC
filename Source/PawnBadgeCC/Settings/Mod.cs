@@ -43,7 +43,7 @@ namespace PawnBadgeCC
         /// <returns></returns>
         public override string SettingsCategory()
         {
-            return "PawnBadge - C&C";
+            return "PawnBadge - Collection";
         }
 
         /// <summary>
@@ -57,10 +57,19 @@ namespace PawnBadgeCC
             listing_Standard.Begin(rect);
             listing_Standard.Label("Enabled pawn-badges", -1, "Selected rows will show up in game");
             listing_Standard.Gap();
-            listing_Standard.CheckboxLabeled("GDI", ref Settings.GDI, "GDI badges");
-            //listing_Standard.CheckboxLabeled("GDI borderless", ref Settings.GDIClean, "GDI badges, without border");
-            listing_Standard.CheckboxLabeled("NOD", ref Settings.NOD, "NOD badges");
-            //listing_Standard.CheckboxLabeled("NOD borderless", ref Settings.NODClean, "NOD badges, without border");
+            listing_Standard.Label("Command & Conquer");
+            listing_Standard.CheckboxLabeled("GDI", ref Settings.GDI, "Badges of the Global Defence Initiative");
+            listing_Standard.CheckboxLabeled("GDI borderless", ref Settings.GDIClean, "GDI badges, without border");
+            listing_Standard.CheckboxLabeled("NOD", ref Settings.NOD, "Badges of the Brotherhood of Nod");
+            listing_Standard.CheckboxLabeled("NOD borderless", ref Settings.NODClean, "NOD badges, without border");
+            listing_Standard.Gap();
+            listing_Standard.Label("Star Wars");
+            listing_Standard.CheckboxLabeled("Imperial Army", ref Settings.SWIAArmy, "Badges of the Imperial Army");
+            listing_Standard.CheckboxLabeled("Imperial Navy", ref Settings.SWIANavy, "Badges of the Imperial Navy");
+            listing_Standard.CheckboxLabeled("Rebels", ref Settings.SWRebels, "Badges of the Rebels");
+            listing_Standard.Gap();
+            listing_Standard.Label("Real");
+            listing_Standard.CheckboxLabeled("Deutsches Heer", ref Settings.DeutschesHeer, "Badges of the Deutsches Heer");
             listing_Standard.End();
             Settings.Write();
             instance.UpdateBadges();
@@ -69,9 +78,13 @@ namespace PawnBadgeCC
         public void UpdateBadges()
         {
             SetBadgeSetVisibility(GDI, Settings.GDI, false);
-            //SetBadgeSetVisibility(GDI, Settings.GDIClean, true);
+            SetBadgeSetVisibility(GDI, Settings.GDIClean, true);
             SetBadgeSetVisibility(NOD, Settings.NOD, false);
-            //SetBadgeSetVisibility(NOD, Settings.NODClean, true);
+            SetBadgeSetVisibility(NOD, Settings.NODClean, true);
+            SetBadgeSetVisibility(SWIAArmy, Settings.SWIAArmy, false);
+            SetBadgeSetVisibility(SWIANavy, Settings.SWIANavy, false);
+            SetBadgeSetVisibility(SWRebels, Settings.SWRebels, false);
+            SetBadgeSetVisibility(DeutschesHeer, Settings.DeutschesHeer, false);
         }
 
         private void SetBadgeSetVisibility(List<BadgeDef> badgeSet, bool visible, bool transparent)
@@ -159,6 +172,84 @@ namespace PawnBadgeCC
             new BadgeDef { defName = "NodRank18", label = "Nod Grand Vizier", description = "Brotherhood of Nod Grand Vizier", icon = "Nod/Nod18_GrandVizier" },
             new BadgeDef { defName = "NodRank19", label = "Nod Inner Circle", description = "Brotherhood of Nod Inner Circle", icon = "Nod/Nod19_InnerCircle" },
             new BadgeDef { defName = "NodRank20", label = "Nod Hand of Kane", description = "Brotherhood of Nod Hand of Kane", icon = "Nod/Nod20_HandofKane" }
+        };
+
+        private List<BadgeDef> SWIANavy = new List<BadgeDef> { new BadgeDef { defName = "SWIANavyEM", label = "Star Wars Imperial Navy Emblem", description = "Star Wars Imperial Navy Emblem", icon = "SWIANavy/SWIANavy_Emblem" },
+            new BadgeDef { defName = "SWIANavyRank1", label = "Ensign", description = "Ensign", icon = "SWIANavy/SWIANavy1_Ensign" },
+            new BadgeDef { defName = "SWIANavyRank2", label = "Junior Lieutenant", description = "Junior Lieutenant", icon = "SWIANavy/SWIANavy2_JuniorLieutenant" },
+            new BadgeDef { defName = "SWIANavyRank3", label = "Second Lieutenant", description = "Second Lieutenant", icon = "SWIANavy/SWIANavy3_SecondLieutenant" },
+            new BadgeDef { defName = "SWIANavyRank4", label = "Lieutenant", description = "Lieutenant", icon = "SWIANavy/SWIANavy4_Lieutenant" },
+            new BadgeDef { defName = "SWIANavyRank5", label = "Senior Lieutenant", description = "Senior Lieutenant",icon = "SWIANavy/SWIANavy5_SeniorLieutenant" },
+            new BadgeDef { defName = "SWIANavyRank6", label = "Captain", description = "Captain", icon = "SWIANavy/SWIANavy6_Captain" },
+            new BadgeDef { defName = "SWIANavyRank7", label = "Senior Captain", description = "Senior Captain", icon = "SWIANavy/SWIANavy7_SeniorCaptain" },
+            new BadgeDef { defName = "SWIANavyRank8", label = "Lieutenant Commander", description = "Lieutenant Commander", icon = "SWIANavy/SWIANavy8_LieutenantCommander" },
+            new BadgeDef { defName = "SWIANavyRank9", label = "Commander", description = "Commander", icon = "SWIANavy/SWIANavy9_Commander" },
+            new BadgeDef { defName = "SWIANavyRank10", label = "Commodore", description = "Commodore", icon = "SWIANavy/SWIANavy10_Commodore" },
+            new BadgeDef { defName = "SWIANavyRank11", label = "Senior Commodore", description = "Senior Commodore", icon = "SWIANavy/SWIANavy11_SeniorCommodore" },
+            new BadgeDef { defName = "SWIANavyRank12", label = "Rear Admiral", description = "Rear Admiral", icon = "SWIANavy/SWIANavy12_RearAdmiral" },
+            new BadgeDef { defName = "SWIANavyRank13", label = "Vice Admiral", description = "Vice Admiral", icon = "SWIANavy/SWIANavy13_ViceAdmiral" },
+            new BadgeDef { defName = "SWIANavyRank14", label = "Admiral", description = "Admiral", icon = "SWIANavy/SWIANavy14_Admiral" },
+            new BadgeDef { defName = "SWIANavyRank15", label = "Fleet Admiral", description = "Fleet Admiral", icon = "SWIANavy/SWIANavy15_FleetAdmiral" },
+            new BadgeDef { defName = "SWIANavyRank16", label = "Grand Admiral", description = "Grand Admiral", icon = "SWIANavy/SWIANavy16_GrandAdmiral" }
+        };
+
+        private List<BadgeDef> SWIAArmy = new List<BadgeDef> { new BadgeDef { defName = "SWIAArmyEM", label = "Star Wars Imperial Army Emblem", description = "Star Wars Imperial Army Emblem", icon = "SWIAArmy/SWIAArmy_Emblem" },
+            new BadgeDef { defName = "SWIAArmyRank1", label = "Ensign", description = "Ensign", icon = "SWIAArmy/SWIAArmy1_Ensign" },
+            new BadgeDef { defName = "SWIAArmyRank2", label = "Junior Lieutenant", description = "Junior Lieutenant", icon = "SWIAArmy/SWIAArmy2_JuniorLieutenant" },
+            new BadgeDef { defName = "SWIAArmyRank3", label = "Second Lieutenant", description = "Second Lieutenant", icon = "SWIAArmy/SWIAArmy3_SecondLieutenant" },
+            new BadgeDef { defName = "SWIAArmyRank4", label = "Lieutenant", description = "Lieutenant", icon = "SWIAArmy/SWIAArmy4_Lieutenant" },
+            new BadgeDef { defName = "SWIAArmyRank5", label = "Senior Lieutenant", description = "Senior Lieutenant",icon = "SWIAArmy/SWIAArmy5_SeniorLieutenant" },
+            new BadgeDef { defName = "SWIAArmyRank6", label = "Captain", description = "Captain", icon = "SWIAArmy/SWIAArmy6_Captain" },
+            new BadgeDef { defName = "SWIAArmyRank7", label = "Senior Captain", description = "Senior Captain", icon = "SWIAArmy/SWIAArmy7_SeniorCaptain" },
+            new BadgeDef { defName = "SWIAArmyRank8", label = "Major", description = "Major", icon = "SWIAArmy/SWIAArmy8_Major" },
+            new BadgeDef { defName = "SWIAArmyRank9", label = "Lieutenant Colonel", description = "Lieutenant Colonel", icon = "SWIAArmy/SWIAArmy9_LieutenantColonel" },
+            new BadgeDef { defName = "SWIAArmyRank10", label = "Colonel", description = "Colonel", icon = "SWIAArmy/SWIAArmy10_Colonel" },
+            new BadgeDef { defName = "SWIAArmyRank11", label = "Senior Colonel", description = "Senior Colonel", icon = "SWIAArmy/SWIAArmy11_SeniorColonel" },
+            new BadgeDef { defName = "SWIAArmyRank12", label = "Major General", description = "Major General", icon = "SWIAArmy/SWIAArmy12_MajorGeneral" },
+            new BadgeDef { defName = "SWIAArmyRank13", label = "Lieutenant General", description = "Lieutenant General", icon = "SWIAArmy/SWIAArmy13_LieutenantGeneral" },
+            new BadgeDef { defName = "SWIAArmyRank14", label = "General", description = "General", icon = "SWIAArmy/SWIAArmy14_General" },
+            new BadgeDef { defName = "SWIAArmyRank15", label = "Marshal", description = "Marshal", icon = "SWIAArmy/SWIAArmy15_Marshal" },
+            new BadgeDef { defName = "SWIAArmyRank16", label = "Grand General", description = "Grand General", icon = "SWIAArmy/SWIAArmy16_GrandGeneral" }
+        };
+
+        private List<BadgeDef> SWRebels = new List<BadgeDef> { new BadgeDef { defName = "SWRebelsEM", label = "Star Wars Rebels Emblem", description = "Star Wars Rebels Emblem", icon = "SWRebels/SWRebels_Emblem" },
+            new BadgeDef { defName = "SWRebelsRank1", label = "Army Lieutenant", description = "Army Lieutenant", icon = "SWRebels/SWRebels1_ArmyLieutenant" },
+            new BadgeDef { defName = "SWRebelsRank2", label = "Army Captain", description = "Army Captain", icon = "SWRebels/SWRebels2_ArmyCaptain" },
+            new BadgeDef { defName = "SWRebelsRank3", label = "Army Major", description = "Army Major", icon = "SWRebels/SWRebels3_ArmyMajor" },
+            new BadgeDef { defName = "SWRebelsRank4", label = "Army Commander", description = "Army Commander", icon = "SWRebels/SWRebels4_ArmyCommander" },
+            new BadgeDef { defName = "SWRebelsRank5", label = "Army Colonel", description = "Army Colonel",icon = "SWRebels/SWRebels5_ArmyColonel" },
+            new BadgeDef { defName = "SWRebelsRank6", label = "Army Admiral", description = "Army Admiral", icon = "SWRebels/SWRebels6_ArmyAdmiral" },
+            new BadgeDef { defName = "SWRebelsRank7", label = "Navy Lieutenant", description = "Navy Lieutenant", icon = "SWRebels/SWRebels7_NavyLieutenant" },
+            new BadgeDef { defName = "SWRebelsRank8", label = "Navy Captain", description = "Navy Captain", icon = "SWRebels/SWRebels8_NavyCaptain" },
+            new BadgeDef { defName = "SWRebelsRank9", label = "Navy Major", description = "Navy Major", icon = "SWRebels/SWRebels9_NavyMajor" },
+            new BadgeDef { defName = "SWRebelsRank10", label = "Navy Commander", description = "Navy Commander", icon = "SWRebels/SWRebels10_NavyCommander" },
+            new BadgeDef { defName = "SWRebelsRank11", label = "Navy Rear Admiral", description = "Navy Rear Admiral", icon = "SWRebels/SWRebels11_NavyRearAdmiral" },
+            new BadgeDef { defName = "SWRebelsRank12", label = "Navy Surface Marshal", description = "Navy Surface Marshal", icon = "SWRebels/SWRebels12_NavySurfaceMarshal" }
+        };
+
+        private List<BadgeDef> DeutschesHeer = new List<BadgeDef> { new BadgeDef { defName = "HeerEM", label = "Heer Emblem", description = "Helmet decal of the Deutsches Heer", icon = "Heer/Heer_Emblem" },
+            new BadgeDef { defName = "HeerRank1", label = "Mannschaften", description = "Deutsches Heer enlisted shoulderboard", icon = "Heer/Heer1_Mannschaften" },
+            new BadgeDef { defName = "HeerRank2", label = "Obergrenadier", description = "Deutsches Heer Obergrenadier", icon = "Heer/Heer2_Obergrenadier" },
+            new BadgeDef { defName = "HeerRank3", label = "Gefreiter", description = "Deutsches Heer Gefreiter", icon = "Heer/Heer3_Gefreiter" },
+            new BadgeDef { defName = "HeerRank4", label = "Obergefreiter", description = "Deutsches Heer Obergefreiter", icon = "Heer/Heer4_Obergefreiter" },
+            new BadgeDef { defName = "HeerRank5", label = "Veteran Obergefreiter", description = "Deutsches Heer Veteran Obergefreiter", icon = "Heer/Heer5_Obergefreiter" },
+            new BadgeDef { defName = "HeerRank6", label = "Stabsgefreiter", description = "Deutsches Heer Stabsgefreiter", icon = "Heer/Heer6_Stabsgefreiter" },
+            new BadgeDef { defName = "HeerRank7", label = "Unteroffizier", description = "Deutsches Heer Unteroffizier", icon = "Heer/Heer7_Unteroffizier" },
+            new BadgeDef { defName = "HeerRank8", label = "Unterfeldwebel", description = "Deutsches Heer Unterfeldwebel", icon = "Heer/Heer8_Unterfeldwebel" },
+            new BadgeDef { defName = "HeerRank9", label = "Feldwebel", description = "Deutsches Heer Feldwebel", icon = "Heer/Heer9_Feldwebel" },
+            new BadgeDef { defName = "HeerRank10", label = "Oberfeldwebel", description = "Deutsches Heer Oberfeldwebel", icon = "Heer/Heer10_Oberfeldwebel" },
+            new BadgeDef { defName = "HeerRank11", label = "Stabsfeldwebel", description = "Deutsches Heer Stabsfeldwebel", icon = "Heer/Heer11_Stabsfeldwebel" },
+            new BadgeDef { defName = "HeerRank12", label = "Leutnant", description = "Deutsches Heer Leutnant", icon = "Heer/Heer16_Leutnant" },
+            new BadgeDef { defName = "HeerRank13", label = "Oberleutnant", description = "Deutsches Heer Oberleutnant", icon = "Heer/Heer17_Oberleutnant" },
+            new BadgeDef { defName = "HeerRank14", label = "Hauptmann", description = "Deutsches Heer Hauptmann", icon = "Heer/Heer18_Hauptmann" },
+            new BadgeDef { defName = "HeerRank15", label = "Major", description = "Deutsches Heer Major", icon = "Heer/Heer19_Major" },
+            new BadgeDef { defName = "HeerRank16", label = "Oberstleutnant", description = "Deutsches Heer Oberstleutnant", icon = "Heer/Heer20_Oberstleutnant" },
+            new BadgeDef { defName = "HeerRank17", label = "Oberst", description = "Deutsches Heer Oberst", icon = "Heer/Heer21_Oberst" },
+            new BadgeDef { defName = "HeerRank18", label = "Generalmajor", description = "Deutsches Heer Generalmajor", icon = "Heer/Heer22_Generalmajor" },
+            new BadgeDef { defName = "HeerRank19", label = "Generalleutnant", description = "Deutsches Heer Generalleutnant", icon = "Heer/Heer23_Generalleutnant" },
+            new BadgeDef { defName = "HeerRank20", label = "General", description = "Deutsches Heer General", icon = "Heer/Heer24_General" },
+            new BadgeDef { defName = "HeerRank21", label = "Generaloberst", description = "Deutsches Heer Generaloberst", icon = "Heer/Heer25_Generaloberst" },
+            new BadgeDef { defName = "HeerRank22", label = "Generalfeldmarschall", description = "Deutsches Heer Generalfeldmarschall", icon = "Heer/Heer26_GeneralFeldmarschall" }
         };
 
         /// <summary>

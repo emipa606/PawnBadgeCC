@@ -36,7 +36,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RR_PawnBadge-RW1.1">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2112663412\1.1\Assemblies\RR_PawnBadge-RW1.1.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2112663412\1.2\Assemblies\RR_PawnBadge-RW1.1.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

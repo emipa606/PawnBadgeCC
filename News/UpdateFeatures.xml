@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+    <modNameReadable>PawnBadgeCC</modNameReadable>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2176592638</linkUrl>
+  </HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>PawnBadgeCC_1_0_1_0</defName>
+    <assemblyVersion>1.0.1.0</assemblyVersion>
+    <content>The mod is now a collection of Badge-sets and this update adds the following:
+- Star Wars Imperial Army
+- Star Wars Imperial Navy
+- Star Wars Rebels
+- WWII German Army
+
+Also added are more transparent versions of the GDI and NOD sets.
+
+If you have an idea for a badge-set or know of a set that need updating just leave a comment and Ill see if I can add it to the mod.
+</content>
+  </HugsLib.UpdateFeatureDef>
+</Defs>
