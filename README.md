@@ -1,6 +1,6 @@
 # PawnBadgeCC
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 
 Update and combination of Badge-mods
@@ -25,16 +25,7 @@ Texas Redhawks three mods:
 
 - Added more transparent versions of GDI and Nod-badges, thanks to user fallout me
 
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/PawnBadgeCC]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
-
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 

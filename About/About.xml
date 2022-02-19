@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Pawn Badge - Collection</name>
   <packageId>Mlie.PawnBadgeCC</packageId>
@@ -19,7 +19,7 @@
   <loadAfter>
     <li>SaucyPigeon.PawnBadge</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 
 Update and combination of Badge-mods
 Combined all badges-mods into one mod where you can select active sets from mod-options.
@@ -48,7 +48,7 @@ Texas Redhawks three mods:
 	[/tr]
 [/table]
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -59,4 +59,3 @@ Texas Redhawks three mods:
 [/list]
 </description>
 </ModMetaData>
-
