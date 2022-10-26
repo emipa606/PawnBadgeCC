@@ -1,13 +1,12 @@
 ﻿using Verse;
 
-namespace PawnBadgeCC
+namespace PawnBadgeCC;
+
+[StaticConstructorOnStartup]
+public class PawnBadgeCC
 {
-    [StaticConstructorOnStartup]
-    public class PawnBadgeCC
+    static PawnBadgeCC()
     {
-        static PawnBadgeCC()
-        {
-            PawnBadgeCCMod.instance.UpdateBadges();
-        }
+        PawnBadgeCCMod.instance.UpdateBadges();
     }
 }
