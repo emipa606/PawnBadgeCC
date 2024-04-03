@@ -1,6 +1,6 @@
 # PawnBadgeCC
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://i.imgur.com/iCj5o7O.png)
 
 
 Update and combination of Badge-mods
@@ -25,17 +25,19 @@ Texas Redhawks three mods:
 
 - Added more transparent versions of GDI and Nod-badges, thanks to user fallout me
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://i.imgur.com/5xwDG6H.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib and command Ctrl+F12
+-  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+-  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2176592638]![Image](https://img.shields.io/github/v/release/emipa606/PawnBadgeCC?label=latest%20version&style=plastic&labelColor=0070cd&color=white)
 
