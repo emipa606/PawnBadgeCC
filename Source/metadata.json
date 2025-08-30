@@ -2,5 +2,18 @@
   "Continued": false,
   "CanAdd": "0",
   "CanRemove": "0",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": false,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 30327,
+  "LinesOfXML": 0,
+  "CodeBaseSize": 71,
+  "LastXmlCleaning": "2025-08-30T22:23:11.8325582+02:00",
+  "SocialImageSet": true,
+  "FundingSet": true,
+  "SearchTags": [
+    " combined",
+    "badges"
+  ]
 }

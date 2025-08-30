@@ -1,24 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputPath>..\..\1.5\Assemblies</OutputPath>
+    <OutputPath>..\..\1.6\Assemblies</OutputPath>
     <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <DebugType>None</DebugType>
     <LangVersion>latest</LangVersion>
-    <FileVersion>1.5.0</FileVersion>
+    <FileVersion>1.6.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4053-beta</Version>
+      <Version>*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-	  <Reference Include="PawnBadge">
-		  <HintPath>..\..\..\..\..\..\workshop\content\294100\2526040241\1.5\Assemblies\RR_PawnBadge-RW1.5.dll</HintPath>
-		  <CopyLocal>False</CopyLocal>
-		  <Private>false</Private>
-	  </Reference>
-	  <PackageReference Include="Mlie_Rimworld_VersionFromManifest" Version="*" />
+    <PackageReference Include="Mlie_Rimworld_VersionFromManifest" Version="*" />
+    <Reference Include="PawnBadge">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2526040241\1.6\Assemblies\RR_PawnBadge-RW1.6.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 </Project>

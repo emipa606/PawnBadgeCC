@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PBCC.ModVersion>Installed mod-version: {0}</PBCC.ModVersion>
+  <PBCC.Enabled>Enabled pawn-badges</PBCC.Enabled>
+  <PBCC.EnabledTT>Selected rows will show up in game</PBCC.EnabledTT>
+  <PBCC.GDITT>Badges of the Global Defence Initiative</PBCC.GDITT>
+  <PBCC.NODTT>Badges of the Brotherhood of Nod</PBCC.NODTT>
+  <PBCC.Borderless>{0} borderless</PBCC.Borderless>
+  <PBCC.BorderlessTT>{0} badges, without border</PBCC.BorderlessTT>
+  <PBCC.ImperialArmy>Imperial Army</PBCC.ImperialArmy>
+  <PBCC.ImperialArmyTT>Badges of the Imperial Army</PBCC.ImperialArmyTT>
+  <PBCC.ImperialNavy>Imperial Navy</PBCC.ImperialNavy>
+  <PBCC.ImperialNavyTT>Badges of the Imperial Navy</PBCC.ImperialNavyTT>
+  <PBCC.Rebels>Rebels</PBCC.Rebels>
+  <PBCC.RebelsTT>Badges of the Rebels</PBCC.RebelsTT>
+  <PBCC.Real>Real</PBCC.Real>
+  <PBCC.BadgesOfThe>Badges of the {0}</PBCC.BadgesOfThe>
+</LanguageData>
